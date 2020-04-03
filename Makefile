@@ -1,4 +1,4 @@
-install: install-deps
+install: npm install
 
 run:
 	npx babel-node 'src/bin/hexlet.js' 10
@@ -21,6 +21,9 @@ lint:
 
 publish:
 	npm publish
+
+start:
+	node bin/brain-games.js
 
 .PHONY: test
 
