@@ -20,10 +20,12 @@ lint:
 	npx eslint .
 
 publish:
-	npm publish
+	npm publish --dry-run
 
 start:
 	node bin/brain-games.js
 
 .PHONY: test
 
+test1:
+	node bin/brain-even.js
