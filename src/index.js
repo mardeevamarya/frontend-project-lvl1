@@ -165,7 +165,7 @@ const brainPrg = () => {
 		let index = getRandomInt(1, 10);
 		let resStr = arrToStr(progrArr, index);
 		let result = resultNum(progrArr, index);
-		 console.log('Question: '+ resStr);
+		console.log('Question: '+ resStr);
  	 	let answer = readlineSync.question('Answer: ');
  	 	if (result === Number(answer)) {
 		 	console.log('Correct!');
@@ -174,17 +174,77 @@ const brainPrg = () => {
 		 else {
 		 	console.log(answer+ ' is wrong answer ;(. Correct answer was '+ result +'.Let\'s try again, '+ userName);
 		 	break;
-		 }
+		}
 	}
   	if (count === 3) {
   		console.log('Congratulations!!!');
 	 }
 };
 
+const generatePrime = () => {
+	let n = 100;
+	let result = [];
+	nextPrime:
+	for (let i = 2; i <= n; i++) { // Для всех i...
+		for (let j = 2; j < i; j++) { // проверить, делится ли число..
+			if (i % j == 0) continue nextPrime; // не подходит, берём следующее
+		}
+		result.push(i);
+	}
+	return result;
+}
+
+const numIncludes = (arr, num) => {
+	if (arr.includes(num)) {
+		return true;
+	}
+	else return false;
+}
+
+const brainPrime = () => {
+	var userName = readlineSync.question('May I have your name? ');
+	console.log('Hello, ' + userName + '!');
+	console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+	let count = 0;
+	
+	for (let i = 1; i <= 3; i +=1) {		
+		let num = getRandomInt(1, 100);
+		let listNum = generatePrime();
+		let bool = numIncludes(listNum, num);
+		console.log('Question: '+ num);
+ 	  	let answer = readlineSync.question('Answer: ');
+ 	  	if ((bool)&&(answer === 'yes')) {
+			console.log('Correct!');
+			count += 1;
+		}
+		else if ((!bool)&&(answer === 'yes')){
+			console.log('"yes" is wrong answer ;(. Correct answer was "no".Let\'s try again, '+ userName);
+			break;
+		}
+		else if ((bool)&&(answer === 'no')){
+			console.log('"no" is wrong answer ;(. Correct answer was "yes".Let\'s try again, '+ userName);
+			break;
+		}
+		else if ((!bool)&&(answer === 'no')){
+			console.log('Correct!');
+			count += 1;
+		}
+		else {
+			console.log('Wrong answer!');
+			break;
+		}
+	}
+   	if (count === 3) {
+  		console.log('Congratulations!!!');
+	}
+};
+
+
 export {brainEven};
 export {brainCalc};
 export {brainGcd};
 export {brainPrg};
+export {brainPrime};
 
 
 

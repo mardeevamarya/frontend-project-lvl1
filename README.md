@@ -36,7 +36,17 @@ https://asciinema.org/a/uWMzNzmnIo1tBIMFbt0ZDjR6f
 Error solution 
 https://asciinema.org/a/fwriLTuI3TnLqWP6x4M3MFQYh
 ```
+## Brain-progression
 
+```sh
+Сorrect solution 
+https://asciinema.org/a/HPJzQiOcdk7Rum6Y8dhF4wbo8
+```
+
+```sh
+Error solution 
+https://asciinema.org/a/HrpF0HHlRCWc5WWa72wAcl0wo
+```
 
 ## GitHub
 
