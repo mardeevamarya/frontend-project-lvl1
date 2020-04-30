@@ -25,7 +25,17 @@ https://asciinema.org/a/MR8KhWL45Sa1YPgWTcNoDI4Eb
 Error solution 
 ttps://asciinema.org/a/GHk9vEztsIsvVgFIBlObFS1FJ
 ```
+## Brain-gcd
 
+```sh
+Сorrect solution 
+https://asciinema.org/a/uWMzNzmnIo1tBIMFbt0ZDjR6f
+```
+
+```sh
+Error solution 
+https://asciinema.org/a/fwriLTuI3TnLqWP6x4M3MFQYh
+```
 
 
 ## GitHub

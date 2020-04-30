@@ -71,6 +71,33 @@ const NOD = (x, y) => {
 	return NOD(y, x % y);
 }
 
+const progression = (step, nach) => {
+	let result = [];
+	result[0] = nach;
+	for (let i = 1; i < 10; i += 1) {
+		result[i] = result[i-1] + step;
+	}
+	return result;
+}
+
+const arrToStr = (arr, index) => {
+	let resultStr = '';
+	let temp = '..'
+	for (let i = 0; i < 10; i += 1) {
+		if (i === index) {
+			resultStr += temp + ' ';
+		}
+		else {
+			resultStr += arr[i] + ' ';
+		}
+	}
+	return resultStr;
+}
+
+const resultNum = (arr, index) => {
+	return arr[index];
+}
+
 const brainCalc = () => {
 	var userName = readlineSync.question('May I have your name? ');
 	console.log('Hello, ' + userName + '!');
@@ -125,11 +152,39 @@ const brainGcd = () => {
 	}
 };
 
-
+const brainPrg = () => {
+	var userName = readlineSync.question('May I have your name? ');
+	console.log('Hello, ' + userName + '!');
+	console.log('What number is missing in the progression?');
+	let count = 0;
+	
+	for (let i = 1; i <= 3; i +=1) {		
+		let step = getRandomInt(1, 10);
+		let nach = getRandomInt(1, 100);
+		let progrArr = progression(step, nach);
+		let index = getRandomInt(1, 10);
+		let resStr = arrToStr(progrArr, index);
+		let result = resultNum(progrArr, index);
+		 console.log('Question: '+ resStr);
+ 	 	let answer = readlineSync.question('Answer: ');
+ 	 	if (result === Number(answer)) {
+		 	console.log('Correct!');
+		 	count += 1;
+ 	 	}
+		 else {
+		 	console.log(answer+ ' is wrong answer ;(. Correct answer was '+ result +'.Let\'s try again, '+ userName);
+		 	break;
+		 }
+	}
+  	if (count === 3) {
+  		console.log('Congratulations!!!');
+	 }
+};
 
 export {brainEven};
 export {brainCalc};
 export {brainGcd};
+export {brainPrg};
 
 
 
