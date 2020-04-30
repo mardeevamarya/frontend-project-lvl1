@@ -5,8 +5,28 @@
 ## Brain-even
 
 ```sh
-https://asciinema.org/a/SBGUpsIVlnCIXD4uC4WY5dck1
+Сorrect solution 
+https://asciinema.org/a/uVA3HEPfBNR2iZyiu6K1KrFym
 ```
+
+```sh
+Error solution 
+https://asciinema.org/a/hXzOMcH92RUHbknBuXJDAV1vu
+```
+
+## Brain-calc
+
+```sh
+Сorrect solution 
+https://asciinema.org/a/MR8KhWL45Sa1YPgWTcNoDI4Eb
+```
+
+```sh
+Error solution 
+ttps://asciinema.org/a/GHk9vEztsIsvVgFIBlObFS1FJ
+```
+
+
 
 ## GitHub
 
