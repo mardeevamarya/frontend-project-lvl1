@@ -1,4 +1,4 @@
-install: npm install
+install: install-deps
 
 run:
 	npx babel-node 'src/bin/hexlet.js' 10

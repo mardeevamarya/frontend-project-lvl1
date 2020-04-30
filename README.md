@@ -47,6 +47,17 @@ https://asciinema.org/a/HPJzQiOcdk7Rum6Y8dhF4wbo8
 Error solution 
 https://asciinema.org/a/HrpF0HHlRCWc5WWa72wAcl0wo
 ```
+## Brain-prime
+
+```sh
+Сorrect solution 
+https://asciinema.org/a/6FLQ9AM7jA93k0n32vIYB4iLL
+```
+
+```sh
+Error solution 
+https://asciinema.org/a/0uG3cFAjzTvtLRVjsVYev5w8S
+```
 
 ## GitHub
 
