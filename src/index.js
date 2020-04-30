@@ -50,20 +50,26 @@ const brainEven = () => {
 }
 
 
-	const doMath = (x,znak,y) => {
-	    let math = 0;
-	    switch(znak) {
-	        case '+':
-	        math = x + y;
-	        break;
-	        case '-':
-	        math = x - y;
-	        break;
-	        case '*':
-	        math = x * y;
-	    }
-	    return math;
-	}
+const doMath = (x,znak,y) => {
+    let math = 0;
+    switch(znak) {
+        case '+':
+        math = x + y;
+        break;
+        case '-':
+        math = x - y;
+        break;
+        case '*':
+        math = x * y;
+    }
+    return math;
+}
+
+const NOD = (x, y) => {
+	if (y > x) return NOD(y, x);
+	if (!y) return x;
+	return NOD(y, x % y);
+}
 
 const brainCalc = () => {
 	var userName = readlineSync.question('May I have your name? ');
@@ -93,10 +99,37 @@ const brainCalc = () => {
 	}
 };
 
+const brainGcd = () => {
+	var userName = readlineSync.question('May I have your name? ');
+	console.log('Hello, ' + userName + '!');
+	console.log('Find the greatest common divisor of given numbers.');
+	let count = 0;
+	
+	for (let i = 1; i <= 3; i +=1) {		
+		let number1 = getRandomInt(1, 100);
+		let number2 = getRandomInt(1, 100);
+		let	result = NOD(number1, number2);		
+		console.log('Question: '+number1+" "+number2);
+ 		let answer = readlineSync.question('Answer: ');
+ 		if (result === Number(answer)) {
+			console.log('Correct!');
+			count += 1;
+ 		}
+		else {
+			console.log(answer+ ' is wrong answer ;(. Correct answer was '+ result +'.Let\'s try again, '+ userName);
+			break;
+		}
+	}
+ 	if (count === 3) {
+ 		console.log('Congratulations!!!');
+	}
+};
+
 
 
 export {brainEven};
 export {brainCalc};
+export {brainGcd};
 
 
 

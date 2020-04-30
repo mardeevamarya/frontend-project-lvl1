@@ -27,5 +27,3 @@ start:
 
 .PHONY: test
 
-test1:
-	node bin/brain-even.js
