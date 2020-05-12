@@ -1,19 +1,8 @@
 import readlineSync from 'readline-sync';
 
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
 
-const even = (num) => {
-	if (num % 2 === 0) {
-		return true;
-	}
-	else {
-		return false;
-	}
-}
-
-const brainEven = () => {
+const brainEven = () => {	
+	console.log('Welcome to the Brain Games!');
 	var userName = readlineSync.question('May I have your name? ');
 	console.log('Hello, ' + userName + '!');
 	console.log('Answer "yes" if the number is even, otherwise answer "no"');
@@ -98,7 +87,8 @@ const resultNum = (arr, index) => {
 	return arr[index];
 }
 
-const brainCalc = () => {
+const brainCalc = () => {	
+	console.log('Welcome to the Brain Games!');
 	var userName = readlineSync.question('May I have your name? ');
 	console.log('Hello, ' + userName + '!');
 	console.log('What is the result of the expression?');
@@ -126,7 +116,8 @@ const brainCalc = () => {
 	}
 };
 
-const brainGcd = () => {
+const brainGcd = () => {	
+	console.log('Welcome to the Brain Games!');
 	var userName = readlineSync.question('May I have your name? ');
 	console.log('Hello, ' + userName + '!');
 	console.log('Find the greatest common divisor of given numbers.');
@@ -152,7 +143,8 @@ const brainGcd = () => {
 	}
 };
 
-const brainPrg = () => {
+const brainPrg = () => {	
+	console.log('Welcome to the Brain Games!');
 	var userName = readlineSync.question('May I have your name? ');
 	console.log('Hello, ' + userName + '!');
 	console.log('What number is missing in the progression?');
@@ -201,7 +193,8 @@ const numIncludes = (arr, num) => {
 	else return false;
 }
 
-const brainPrime = () => {
+const brainPrime = () => {	
+	console.log('Welcome to the Brain Games!');
 	var userName = readlineSync.question('May I have your name? ');
 	console.log('Hello, ' + userName + '!');
 	console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -239,12 +232,35 @@ const brainPrime = () => {
 	}
 };
 
+const brain = (greeting, condition, generate, logic, res) => {
+	// console.log('Welcome to the Brain Games!');
+	// var userName = readlineSync.question('May I have your name? ');
+	// console.log('Hello, ' + userName + '!');
+	// console.log('Answer "yes" if the number is even, otherwise answer "no"');
+	greeting();
+	condition();
+	let count = 0;
+	for (let i = 1; i <= 3; i +=1) {
+		let number = generate();		
+		console.log('Question: '+ number);
+		logic(number);
+		if ((answer === result)) {
+			console.log('Correct!');
+			count += 1;
+		}
+		else {
+			console.log(answer+ ' is wrong answer ;(. Correct answer was '+ result +'.Let\'s try again, '+ userName);
+			break;
+		}
+	}
+	res();
+}
+
 
 export {brainEven};
 export {brainCalc};
 export {brainGcd};
 export {brainPrg};
 export {brainPrime};
-
-
+export {brain};
 

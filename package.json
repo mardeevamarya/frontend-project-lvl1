@@ -25,7 +25,6 @@
   "homepage": "https://github.com/mardeevamarya/frontend-project-lvl1#readme",
   "type": "module",
   "dependencies": {
-    "minimist": "^1.2.5",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
@@ -33,5 +32,8 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-rallycoding": "^3.2.0",
     "eslint-plugin-import": "^2.20.1"
-  }
+  },
+  "keywords": [
+    "brain-games-mardeevam"
+  ]
 }
