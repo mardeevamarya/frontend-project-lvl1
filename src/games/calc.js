@@ -5,48 +5,51 @@ import readlineSync from 'readline-sync';
 import {getRandomInt} from '../utils.js';
 
 
-const greeting = () => {
-	console.log('Welcome to the Brain Games!');
-	let userName = readlineSync.question('May I have your name? ');
-	console.log('Hello, ' + userName + '!');	
+const condition = 'Answer "yes" if the number is even, otherwise answer "no"';
+
+const doMath = (x,znak,y) => {
+    let math = 0;
+    switch(znak) {
+        case '+':
+        math = x + y;
+        break;
+        case '-':
+        math = x - y;
+        break;
+        case '*':
+        math = x * y;
+    }
+    return math;
 }
 
-const condition = () => {
-	console.log('Answer "yes" if the number is even, otherwise answer "no"');
-}
 
 const generate = () => {
-	let number = getRandomInt(1, 100);
+	let number1 = getRandomInt(1, 100);
+	let number2 = getRandomInt(1, 100);
+	let resArr = [];
+	let arr = ['+', '-', '*'];
+	let znak = arr[getRandomInt(0, 2)];
+	let math = 0;
+	switch(znak) {
+        case '+':
+        math = x + y;
+        break;
+        case '-':
+        math = x - y;
+        break;
+        case '*':
+        math = x * y;
+    }
+    let resVirazh = String(number1) + String(znak) + String(number2);
+	resArr.push(resVirazh);	
+	console.log('Question: '+ resVirazh);
+	resArr.push(math);
+	return resArr;
 }
 
-const even = (num) => {
-	if (num % 2 === 0) {
-		return true;
-	}
-	else {
-		return false;
-	}
+
+const startBrainCalc = () => {
+	brain(condition, generate);
 }
 
-const logic = (number) => {
-	let answer = readlineSync.question('Answer: ');
-	let bool = even(number);
-	let result;
-	if (bool) {
-		result = "yes";
-	}
-	else result = "no";
-
-}
-
-const res = () => {
-	if (count === 3) {
-		console.log('Congratulations!!!');
-	}
-}
-
-const brainCalc = () => {
-	brain(greeting, condition, generate, logic, res);
-}
-
-export {brainCalc};
+export default startBrainCalc;

@@ -232,28 +232,29 @@ const brainPrime = () => {
 	}
 };
 
-const brain = (greeting, condition, generate, logic, res) => {
-	// console.log('Welcome to the Brain Games!');
-	// var userName = readlineSync.question('May I have your name? ');
-	// console.log('Hello, ' + userName + '!');
-	// console.log('Answer "yes" if the number is even, otherwise answer "no"');
-	greeting();
-	condition();
+const brain = (condition, generate, logic, res) => {
+	console.log('Welcome to the Brain Games!');
+	var userName = readlineSync.question('May I have your name? ');
+	console.log('Hello, ' + userName + '!');
+	console.log(condition);
 	let count = 0;
 	for (let i = 1; i <= 3; i +=1) {
-		let number = generate();		
-		console.log('Question: '+ number);
-		logic(number);
-		if ((answer === result)) {
+		let tempRes = generate();		
+		let answer = readlineSync.question('Answer: ');
+		
+		if ((answer === tempRes[1])) {
 			console.log('Correct!');
 			count += 1;
 		}
 		else {
-			console.log(answer+ ' is wrong answer ;(. Correct answer was '+ result +'.Let\'s try again, '+ userName);
+			console.log(answer+ ' is wrong answer ;(. Correct answer was '+ tempRes[1] +'.Let\'s try again, '+ userName);
 			break;
 		}
 	}
-	res();
+	if (count === 3) {
+		console.log('Congratulations!!!');
+	}
+}
 }
 
 
