@@ -255,7 +255,7 @@ const brain = (condition, generate, logic, res) => {
 		console.log('Congratulations!!!');
 	}
 }
-}
+
 
 
 export {brainEven};

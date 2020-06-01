@@ -7,22 +7,6 @@ import {getRandomInt} from '../utils.js';
 
 const condition = 'Answer "yes" if the number is even, otherwise answer "no"';
 
-const doMath = (x,znak,y) => {
-    let math = 0;
-    switch(znak) {
-        case '+':
-        math = x + y;
-        break;
-        case '-':
-        math = x - y;
-        break;
-        case '*':
-        math = x * y;
-    }
-    return math;
-}
-
-
 const generate = () => {
 	let number1 = getRandomInt(1, 100);
 	let number2 = getRandomInt(1, 100);
@@ -32,13 +16,13 @@ const generate = () => {
 	let math = 0;
 	switch(znak) {
         case '+':
-        math = x + y;
+        math = number1 + number2;
         break;
         case '-':
-        math = x - y;
+        math = number1 - number2;
         break;
         case '*':
-        math = x * y;
+        math = number1 * number2;
     }
     let resVirazh = String(number1) + String(znak) + String(number2);
 	resArr.push(resVirazh);	
