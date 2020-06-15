@@ -1,31 +1,21 @@
-import brain from '../index.js';
+import startBrain from '../index.js';
 import { getRandomInt } from '../utils.js';
 
 const condition = 'Answer "yes" if the number is even, otherwise answer "no"';
 
-const even = (num) => {
-  if (num % 2 === 0) {
-    return true;
-  }
-  return false;
+const isEven = (num) => {
+  return (num % 2 === 0);   
 };
 
-const generate = () => {
+const genRoundData = () => {
   const number = getRandomInt(1, 100);
-  const resArr = [];
-  resArr.push(String(number));
-  console.log(`Question: ${number}`);
-  const bool = even(number);
+  const bool = isEven(number);
   let result;
-  if (bool) {
-    result = 'yes';
-  } else result = 'no';
-  resArr.push(String(result));
-  return resArr;
+  if (bool) ? {result = 'yes';} : result = 'no';
+  return [number, result];
 };
 
-const startBrainEven = () => {
-  brain(condition, generate);
+export default () => {
+  startBrain(condition, genRoundData);
 };
 
-export default startBrainEven;

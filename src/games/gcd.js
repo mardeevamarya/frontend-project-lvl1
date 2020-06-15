@@ -1,4 +1,4 @@
-import brain from '../index.js';
+import startBrain from '../index.js';
 import { getRandomInt } from '../utils.js';
 
 const condition = 'Find the greatest common divisor of given numbers.';
@@ -9,20 +9,14 @@ const NOD = (x, y) => {
   return NOD(y, x % y);
 };
 
-const generate = () => {
+const genRoundData = () => {
   const number1 = getRandomInt(1, 100);
   const number2 = getRandomInt(1, 100);
   const resVirazh = `${number1} ${number2}`;
-  const resArr = [];
-  const	result = NOD(number1, number2);
-  resArr.push(String(resVirazh));
-  console.log(`Question: ${resVirazh}`);
-  resArr.push(String(result));
-  return resArr;
+  const	result = String(NOD(number1, number2));
+  return [resVirazh, result];
 };
 
-const startBrainGcd = () => {
-  brain(condition, generate);
+export default () => {
+  startBrain(condition, genRoundData);
 };
-
-export default startBrainGcd;

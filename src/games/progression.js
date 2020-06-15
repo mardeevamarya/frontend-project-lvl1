@@ -1,4 +1,4 @@
-import brain from '../index.js';
+import startBrain from '../index.js';
 import { getRandomInt } from '../utils.js';
 
 
@@ -28,7 +28,7 @@ const arrToStr = (arr, index) => {
 
 const resultNum = (arr, index) => (arr[index]);
 
-const generate = () => {
+const genRoundData = () => {
   const resArr = [];
   const step = getRandomInt(1, 10);
   const nach = getRandomInt(1, 100);
@@ -36,14 +36,10 @@ const generate = () => {
   const index = getRandomInt(1, 10);
   const resStr = arrToStr(progrArr, index);
   const result = resultNum(progrArr, index);
-  resArr.push(resStr);
-  console.log(`Question: ${resStr}`);
-  resArr.push(String(result));
-  return resArr;
+  return [resStr, result];
 };
 
-const startBrainProgression = () => {
-  brain(condition, generate);
+export default () => {
+  startBrain(condition, genRoundData);
 };
 
-export default startBrainProgression;
