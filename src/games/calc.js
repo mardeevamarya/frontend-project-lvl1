@@ -1,4 +1,4 @@
-import startBrain from '../index.js';
+import startEngine from '../index.js';
 import { getRandomInt } from '../utils.js';
 
 
@@ -34,5 +34,5 @@ const genRoundData = () => {
 };
 
 export default () => {
-  startBrain(condition, genRoundData);
+  startEngine(condition, genRoundData);
 };

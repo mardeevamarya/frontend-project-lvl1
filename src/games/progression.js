@@ -1,4 +1,4 @@
-import startBrain from '../index.js';
+import startEngine from '../index.js';
 import { getRandomInt } from '../utils.js';
 
 
@@ -29,7 +29,6 @@ const arrToStr = (arr, index) => {
 const resultNum = (arr, index) => (arr[index]);
 
 const genRoundData = () => {
-  const resArr = [];
   const step = getRandomInt(1, 10);
   const nach = getRandomInt(1, 100);
   const progrArr = progression(step, nach);
@@ -40,6 +39,5 @@ const genRoundData = () => {
 };
 
 export default () => {
-  startBrain(condition, genRoundData);
+  startEngine(condition, genRoundData);
 };
-

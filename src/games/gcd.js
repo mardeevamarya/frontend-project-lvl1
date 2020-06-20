@@ -1,4 +1,4 @@
-import startBrain from '../index.js';
+import startEngine from '../index.js';
 import { getRandomInt } from '../utils.js';
 
 const condition = 'Find the greatest common divisor of given numbers.';
@@ -13,10 +13,10 @@ const genRoundData = () => {
   const number1 = getRandomInt(1, 100);
   const number2 = getRandomInt(1, 100);
   const resVirazh = `${number1} ${number2}`;
-  const	result = String(NOD(number1, number2));
+  const result = String(NOD(number1, number2));
   return [resVirazh, result];
 };
 
 export default () => {
-  startBrain(condition, genRoundData);
+  startEngine(condition, genRoundData);
 };
