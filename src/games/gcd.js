@@ -3,18 +3,17 @@ import { getRandomInt } from '../utils.js';
 
 const condition = 'Find the greatest common divisor of given numbers.';
 
-const NOD = (x, y) => {
-  if (y > x) return NOD(y, x);
+const getGCD = (x, y) => {
   if (!y) return x;
-  return NOD(y, x % y);
+  return getGCD(y, x % y);
 };
 
 const genRoundData = () => {
   const number1 = getRandomInt(1, 100);
   const number2 = getRandomInt(1, 100);
-  const resVirazh = `${number1} ${number2}`;
-  const result = String(NOD(number1, number2));
-  return [resVirazh, result];
+  const question = `${number1} ${number2}`;
+  const correctAnswer = String(getGCD(number1, number2));
+  return [question, correctAnswer];
 };
 
 export default () => {

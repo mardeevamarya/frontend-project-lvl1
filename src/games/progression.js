@@ -33,9 +33,9 @@ const genRoundData = () => {
   const nach = getRandomInt(1, 100);
   const progrArr = progression(step, nach);
   const index = getRandomInt(1, 10);
-  const resStr = arrToStr(progrArr, index);
-  const result = resultNum(progrArr, index);
-  return [resStr, result];
+  const question = arrToStr(progrArr, index);
+  const correctAnswer = resultNum(progrArr, index);
+  return [question, correctAnswer];
 };
 
 export default () => {

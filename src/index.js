@@ -12,7 +12,9 @@ const startEngine = (condition, genRoundData) => {
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Answer: ');
     if (answer !== correctAnswer) {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.Let's try again, ${userName}`); return;
+      console.log(`${answer} is wrong answer ;(.`);
+      console.log(`Correct answer was ${correctAnswer}.Let's try again, ${userName}`);
+      return;
     }
     console.log('Correct!');
   }
