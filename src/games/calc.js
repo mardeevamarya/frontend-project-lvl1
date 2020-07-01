@@ -5,8 +5,8 @@ import { getRandomInt } from '../utils.js';
 const condition = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
-const doMath = (x, znak, y) => {
-  switch (znak) {
+const doMath = (x, operator, y) => {
+  switch (operator) {
     case '+':
       return x + y;
     case '-':
@@ -23,7 +23,7 @@ const genRoundData = () => {
   const number2 = getRandomInt(1, 100);
   const operator = operators[getRandomInt(0, operators.length - 1)];
   const correctAnswer = String(doMath(number1, operator, number2));
-  const question = String(number1) + String(operator) + String(number2);
+  const question = `${number1}${operator}${number2}`;
   return [question, correctAnswer];
 };
 

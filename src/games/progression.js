@@ -3,38 +3,25 @@ import { getRandomInt } from '../utils.js';
 
 
 const condition = 'What number is missing in the progression?';
+const progressionLength = 10;
 
-const progression = (step, nach) => {
-  const result = [];
-  result[0] = nach;
-  for (let i = 1; i < 10; i += 1) {
-    result[i] = result[i - 1] + step;
+const makeProgression = (step, first) => {
+  const progr = [first];
+  for (let i = 1; i < progressionLength; i += 1) {
+    const temp = progr[i - 1] + step;
+    progr.push(temp);
   }
-  return result;
+  return progr;
 };
-
-const arrToStr = (arr, index) => {
-  let resultStr = '';
-  const temp = '..';
-  for (let i = 0; i < 10; i += 1) {
-    if (i === index) {
-      resultStr += `${temp} `;
-    } else {
-      resultStr += `${arr[i]} `;
-    }
-  }
-  return resultStr;
-};
-
-const resultNum = (arr, index) => (arr[index]);
 
 const genRoundData = () => {
   const step = getRandomInt(1, 10);
   const nach = getRandomInt(1, 100);
-  const progrArr = progression(step, nach);
-  const index = getRandomInt(1, 10);
-  const question = arrToStr(progrArr, index);
-  const correctAnswer = resultNum(progrArr, index);
+  const progr = makeProgression(step, nach);
+  const hiddenIndex = getRandomInt(0, progressionLength - 1);
+  const correctAnswer = String(progr[hiddenIndex]);
+  progr[hiddenIndex] = '..';
+  const question = progr.join();
   return [question, correctAnswer];
 };
 
