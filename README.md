@@ -41,9 +41,10 @@ Error solution
 ## Brain-progression
 
 ```sh
-Сorrect solution 
-https://asciinema.org/a/HPJzQiOcdk7Rum6Y8dhF4wbo8
+Сorrect solution
 ```
+[![asciicast](https://asciinema.org/a/MhnJZ0Vzx7QVcSTKbowlIA4H8.svg)](https://asciinema.org/a/MhnJZ0Vzx7QVcSTKbowlIA4H8)
+
 
 ```sh
 Error solution 
