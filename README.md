@@ -17,8 +17,9 @@ Error solution
 
 ```sh
 Сorrect solution 
-https://asciinema.org/a/MR8KhWL45Sa1YPgWTcNoDI4Eb
 ```
+[![asciicast](https://asciinema.org/a/VyPJTf8099hYL0BcjGqteUifF.svg)](https://asciinema.org/a/VyPJTf8099hYL0BcjGqteUifF)
+
 
 ```sh
 Error solution 
