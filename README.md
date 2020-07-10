@@ -22,8 +22,9 @@ https://asciinema.org/a/MR8KhWL45Sa1YPgWTcNoDI4Eb
 
 ```sh
 Error solution 
-ttps://asciinema.org/a/GHk9vEztsIsvVgFIBlObFS1FJ
 ```
+[![asciicast](https://asciinema.org/a/fXPz2QqvoZGBqfZYJLPYZq6lW.svg)](https://asciinema.org/a/fXPz2QqvoZGBqfZYJLPYZq6lW)
+
 ## Brain-gcd
 
 ```sh
