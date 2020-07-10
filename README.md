@@ -6,7 +6,7 @@
 
 ```sh
 Сorrect solution 
-https://asciinema.org/a/uVA3HEPfBNR2iZyiu6K1KrFym
+[![asciicast](https://asciinema.org/a/aMAHPlnch5EDYJIbvYyQN4ioS.svg)](https://asciinema.org/a/aMAHPlnch5EDYJIbvYyQN4ioS)
 ```
 
 ```sh
