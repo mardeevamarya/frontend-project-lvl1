@@ -30,8 +30,8 @@ Error solution
 
 ```sh
 Сorrect solution 
-https://asciinema.org/a/uWMzNzmnIo1tBIMFbt0ZDjR6f
 ```
+[![asciicast](https://asciinema.org/a/Ij7Lc5GAdhdpKI1k7yzHESCdE.svg)](https://asciinema.org/a/Ij7Lc5GAdhdpKI1k7yzHESCdE)
 
 ```sh
 Error solution
