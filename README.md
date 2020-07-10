@@ -6,9 +6,8 @@
 
 ```sh
 Сorrect solution 
-[![asciicast](https://asciinema.org/a/aMAHPlnch5EDYJIbvYyQN4ioS.svg)](https://asciinema.org/a/aMAHPlnch5EDYJIbvYyQN4ioS)
 ```
-
+[![asciicast](https://asciinema.org/a/aMAHPlnch5EDYJIbvYyQN4ioS.svg)](https://asciinema.org/a/aMAHPlnch5EDYJIbvYyQN4ioS)
 ```sh
 Error solution 
 https://asciinema.org/a/hXzOMcH92RUHbknBuXJDAV1vu
