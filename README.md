@@ -54,9 +54,10 @@ Error solution
 ## Brain-prime
 
 ```sh
-Сorrect solution 
-https://asciinema.org/a/6FLQ9AM7jA93k0n32vIYB4iLL
+Сorrect solution
 ```
+[![asciicast](https://asciinema.org/a/aitgURla53DyX5IDam9FKJCow.svg)](https://asciinema.org/a/aitgURla53DyX5IDam9FKJCow)
+
 
 ```sh
 Error solution 
