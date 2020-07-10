@@ -10,8 +10,8 @@
 [![asciicast](https://asciinema.org/a/aMAHPlnch5EDYJIbvYyQN4ioS.svg)](https://asciinema.org/a/aMAHPlnch5EDYJIbvYyQN4ioS)
 ```sh
 Error solution 
-https://asciinema.org/a/hXzOMcH92RUHbknBuXJDAV1vu
 ```
+[![asciicast](https://asciinema.org/a/GxQAj8JpVC3MkTTywk2yhA5Yq.svg)](https://asciinema.org/a/GxQAj8JpVC3MkTTywk2yhA5Yq)
 
 ## Brain-calc
 
