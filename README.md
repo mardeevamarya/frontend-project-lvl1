@@ -34,9 +34,10 @@ https://asciinema.org/a/uWMzNzmnIo1tBIMFbt0ZDjR6f
 ```
 
 ```sh
-Error solution 
-https://asciinema.org/a/fwriLTuI3TnLqWP6x4M3MFQYh
+Error solution
 ```
+[![asciicast](https://asciinema.org/a/iAVVD0PtwKWah00iIXihgN7cP.svg)](https://asciinema.org/a/iAVVD0PtwKWah00iIXihgN7cP)
+
 ## Brain-progression
 
 ```sh
