@@ -48,8 +48,9 @@ Error solution
 
 ```sh
 Error solution 
-https://asciinema.org/a/HrpF0HHlRCWc5WWa72wAcl0wo
 ```
+[![asciicast](https://asciinema.org/a/k6TWbw6XbjBj1RDvOYlkmrG5l.svg)](https://asciinema.org/a/k6TWbw6XbjBj1RDvOYlkmrG5l)
+
 ## Brain-prime
 
 ```sh
