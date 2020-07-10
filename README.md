@@ -60,9 +60,10 @@ Error solution
 
 
 ```sh
-Error solution 
-https://asciinema.org/a/0uG3cFAjzTvtLRVjsVYev5w8S
+Error solution
 ```
+[![asciicast](https://asciinema.org/a/ZWiZ5IUsduqLTekbtrZS6enEp.svg)](https://asciinema.org/a/ZWiZ5IUsduqLTekbtrZS6enEp)
+
 
 ## GitHub
 
